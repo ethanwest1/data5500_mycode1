@@ -17,35 +17,32 @@ John = Employee("John", 5000)
 print(John.increase_ten())
 
 
-# ChatGPT session transcript (Problem 1: Rectangle)
+# ChatGPT session transcript (Problem 2: Employee)
 #
-# Me: What are the basic steps for problem 1?
-# ChatGPT: Define Rectangle class → init with length/width → area() method → test with Rectangle(5,3).
+# Me: Let's move onto problem 2.
+# ChatGPT: Broke it down — create class with name & salary, add a method to raise salary 
+#          by percentage, test with John at 5000 salary and raise by 10%.
 #
-# Me: This is what I have so far:
-#   class Rectangle:
-#       def_init_(self, length, width):
-#           self.length = length
-#           self.width = width
-#       def area(self):
-#           area = length * width
-#           return print("The area is: ", area)
-#   test = Rectangle(3,5)
-#   test.area()
-# ChatGPT: Explained that the constructor needed `__init__` with double underscores, 
-#          methods must use `self.length` and `self.width` (not bare variables),
-#          and recommended returning values instead of printing inside the method.
+# Me: First attempt:
+#   class Employee:
+#       def __init__(self, name, salary):
+#           self.name = name
+#           self.salary = salary
+#       def increase_ten(self):
+#           return salary * 1.1
+#   John = Employee("John", 5000)
+#   print(increase_ten.John())
+# ChatGPT: Explained issues — needed to use `self.salary` not `salary`, update the attribute 
+#          permanently, and call method with `John.increase_ten()` not flipped syntax.
 #
-# Me: How about now? (after fixing)
-#   class Rectangle:
-#       def__init__(self, length, width):
-#           self.length = length
-#           self.width = width
-#       def area(self):
-#           return self.length * self.width
-#   test = Rectangle(3,5)
-#   print(test.area())
-# ChatGPT: ✅ Correct, except noted a small typo: need a space after `def`.
+# Me: Fixed version:
+#   def increase_ten(self):
+#       self.salary = self.salary * 1.1
+#       return self.salary
+#   John = Employee("John", 5000)
+#   print(John.increase_ten())
+# ChatGPT: ✅ Correct — raises salary to 5500.0 and prints it.
 #
-# Me: Fixed it with `def __init__`, tested again, and it worked.
-# ChatGPT: Confirmed final version was correct and prints 15.
+# Me: Asked: why does `self.salary = self.salary * 1.1` update permanently?
+# ChatGPT: Explained that `self.salary` is stored on the object, so once reassigned, 
+#          the object remembers the new value until changed again.
