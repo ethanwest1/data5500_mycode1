@@ -52,5 +52,38 @@ print(f"{Spirit.name} is approximately {Spirit.human_years()} years old if in hu
 print(f"The average lifespan for a {Spirit.species} is {Spirit.avg_lifespan()}.")
 
 
+# ChatGPT session transcript (Problem 3: Pet)
+#
+# Me: Let's move onto problem 3.
+# ChatGPT: Outlined steps — class with name, age, species; method for human_years; 
+#          method for average lifespan by species; instantiate 3 pets and print info.
+#
+# Me: First attempt:
+#   def human_years(self): 
+#       if species == "dog":
+#           return self.age * 7
+#       elif species == "goldfish":
+#           return self.age * 18
+#   Winnie = Pet("Winnie", 4, "Dog")
+#   print(f"{self.name} is approximately {Winnie.human_years()}...")
+# ChatGPT: Corrected mistakes — must use `self.species` not bare `species`, 
+#          and can’t use `self` outside the class; must use object name instead.
+#
+# Me: Revised code with self.species and proper print.
+# ChatGPT: ✅ Worked, produced correct output for Winnie.
+#
+# Me: Asked if this fully satisfies requirements.
+# ChatGPT: Said almost — needed the average lifespan method and at least 3 pets.
+#
+# Me: Added `avg_lifespan` with dictionary: dog=12, cat=15, goldfish=10.
+# ChatGPT: Approved, but pointed out assignment also requires a class variable `species`.
+#
+# Me: Asked how to add that.
+# ChatGPT: Showed adding `species = "unknown"` at the top of the class, 
+#          while still letting each pet override it in `__init__`.
+#
+# Final: Three pets (Winnie the dog, Mitch the dog, Spirit the goldfish) created. 
+# Prints their human years and their species’ average lifespan.
+
 
         
