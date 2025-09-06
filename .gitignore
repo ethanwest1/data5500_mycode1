@@ -1,0 +1,9 @@
+.bash_history
+.bashrc
+.config/
+.wget-hsts
+code-server.log
+.cache/
+.local/
+.venv/
+venv/

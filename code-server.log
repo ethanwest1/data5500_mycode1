@@ -1,0 +1,69 @@
+[2025-09-06T05:33:19.674Z] info  code-server 4.103.2 54b33a75e0b4593b77f9a217323c4b27a42f4073
+[2025-09-06T05:33:19.677Z] info  Using user-data-dir /root/.local/share/code-server
+[2025-09-06T05:33:19.724Z] info  Using config file /home/ubuntu/.config/code-server/config.yaml
+[2025-09-06T05:33:19.724Z] info  HTTPS server listening on https://0.0.0.0/
+[2025-09-06T05:33:19.724Z] info    - Authentication is enabled
+[2025-09-06T05:33:19.725Z] info      - Using password from /home/ubuntu/.config/code-server/config.yaml
+[2025-09-06T05:33:19.725Z] info    - Using certificate for HTTPS: /home/ubuntu/.config/code-server/selfsigned.crt
+[2025-09-06T05:33:19.725Z] info  Session server listening on /root/.local/share/code-server/code-server-ipc.sock
+[05:34:44] 
+
+
+
+
+[05:34:45] Extension host agent started.
+[05:34:45] Started initializing default profile extensions in extensions installation folder. file:///root/.local/share/code-server/extensions
+[05:34:45] Completed initializing default profile extensions in extensions installation folder. file:///root/.local/share/code-server/extensions
+File not found: /var/app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
+File not found: /var/app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+[05:34:58] [<unknown>][83c38fda][ManagementConnection] New connection established.
+[05:35:01] [<unknown>][b4c28736][ExtensionHostConnection] New connection established.
+[05:35:01] [<unknown>][b4c28736][ExtensionHostConnection] <7683> Launched Extension Host Process.
+[05:40:23] Getting Manifest... ms-python.python
+[05:40:23] Installing extension: ms-python.python {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: Or {
+    scheme: 'file',
+    authority: '',
+    path: '/root/.local/share/code-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///root/.local/share/code-server/extensions/extensions.json',
+    _fsPath: '/root/.local/share/code-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.103.2', date: '2025-08-25T17:36:40.017Z' }
+}
+[05:40:23] #2: https://open-vsx.org/vscode/gallery/vscode/ms-python/vscode-pylance/latest - error GET connect ECONNREFUSED 127.0.0.1:80
+[05:40:23] Error while getting the latest version for the extension ms-python.vscode-pylance. connect ECONNREFUSED 127.0.0.1:80
+[05:40:23] #4: https://open-vsx.org/vscode/gallery/vscode/ms-python/vscode-python-envs/latest - error GET connect ECONNREFUSED 127.0.0.1:80
+[05:40:23] Error while getting the latest version for the extension ms-python.vscode-python-envs. connect ECONNREFUSED 127.0.0.1:80
+[05:40:23] #3: https://open-vsx.org/vscode/gallery/vscode/ms-python/debugpy/latest - error GET connect ECONNREFUSED 127.0.0.1:80
+[05:40:23] Error while getting the latest version for the extension ms-python.debugpy. connect ECONNREFUSED 127.0.0.1:80
+[05:40:23] Getting Manifest... ms-python.debugpy
+[05:40:24] Installing extension: ms-python.debugpy {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: Or {
+    scheme: 'file',
+    authority: '',
+    path: '/root/.local/share/code-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///root/.local/share/code-server/extensions/extensions.json',
+    _fsPath: '/root/.local/share/code-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.103.2', date: '2025-08-25T17:36:40.017Z' },
+  installGivenVersion: false,
+  context: { dependecyOrPackExtensionInstall: true }
+}
+[05:40:26] Extracted extension to file:///root/.local/share/code-server/extensions/ms-python.debugpy-2025.10.0-linux-x64: ms-python.debugpy
+[05:40:26] Renamed to /root/.local/share/code-server/extensions/ms-python.debugpy-2025.10.0-linux-x64
+[05:40:28] Extracted extension to file:///root/.local/share/code-server/extensions/ms-python.python-2025.12.0-universal: ms-python.python
+[05:40:28] Renamed to /root/.local/share/code-server/extensions/ms-python.python-2025.12.0-universal
+[05:40:28] Extension installed successfully: ms-python.debugpy file:///root/.local/share/code-server/extensions/extensions.json
+[05:40:28] Extension installed successfully: ms-python.python file:///root/.local/share/code-server/extensions/extensions.json
