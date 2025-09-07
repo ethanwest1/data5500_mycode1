@@ -1,34 +1,38 @@
-# --- Block everything by default
-*
+cat > .gitignore <<'EOF'
+# ---- Project-friendly blacklist (.git keeps tracking new stuff) ----
 
-# --- Allow directories to be traversed
-!*/
-
-# --- Keep these folders
-!data5500_mycode/
-!data5500_mycode/**
-
-!data5500_fall2025/
-!data5500_fall2025/**
-
-!HW3/
-!HW3/**
-
-# --- Keep a few essentials in the repo root
-!.gitignore
-!README.md
-!startup.sh
-
-# --- Extra safety (if these ever appear, ignore them)
-code-server.log
+# OS/editor/log junk
 *.log
-.ssh/
-.cache/
-.config/
-.local/
-.bash_history
-.bashrc
-.bash_logout
-.profile
-.sudo_as_admin_successful
-.wget-hsts
+code-server.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# Node (if ever used)
+node_modules/
+
+# VS Code
+.vscode/
+
+# --- Home-directory dotfiles/dirs (clutter you don't want on GitHub)
+# (root-anchored so the same-named items inside your projects are unaffected)
+/.cache/
+/.config/
+/.local/
+/.ssh/
+/.bash_history
+/.bashrc
+/.bash_logout
+/.profile
+/.sudo_as_admin_successful
+/.wget-hsts
+
+# Keep these visible
+!.gitignore
+EOF
