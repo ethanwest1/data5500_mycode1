@@ -1,9 +1,34 @@
+# --- Block everything by default
+*
+
+# --- Allow directories to be traversed
+!*/
+
+# --- Keep these folders
+!data5500_mycode/
+!data5500_mycode/**
+
+!data5500_fall2025/
+!data5500_fall2025/**
+
+!HW3/
+!HW3/**
+
+# --- Keep a few essentials in the repo root
+!.gitignore
+!README.md
+!startup.sh
+
+# --- Extra safety (if these ever appear, ignore them)
+code-server.log
+*.log
+.ssh/
+.cache/
+.config/
+.local/
 .bash_history
 .bashrc
-.config/
+.bash_logout
+.profile
+.sudo_as_admin_successful
 .wget-hsts
-code-server.log
-.cache/
-.local/
-.venv/
-venv/

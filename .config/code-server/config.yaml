@@ -1,5 +1,0 @@
-bind-addr: 0.0.0.0:443
-auth: password
-password: Dooder$123
-cert: ~/.config/code-server/selfsigned.crt
-cert-key: ~/.config/code-server/selfsigned.key
